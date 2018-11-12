@@ -10,21 +10,27 @@
   },
   "license": "MIT",
   "files": [
-    "index.js"
+    "index.js",
+    "dist/*"
   ],
-  "main": "index.js",
+  "main": "dist/get-value.cjs.js",
+  "module": "dist/get-value.es.js",
   "engines": {
     "node": ">=6.0"
   },
   "scripts": {
-    "test": "nyc --reporter=text --reporter=html mocha"
+    "test": "nyc --reporter=text --reporter=html mocha",
+    "build": "bili index.js --format es,cjs",
+    "release": "standard-version"
   },
   "dependencies": {
-    "isobject": "^3.0.1"
+    "isobject": "^3.0.1",
+    "standard-version": "^4.4.0"
   },
   "devDependencies": {
     "arr-reduce": "^1.0.1",
     "benchmarked": "^2.0.0",
+    "bili": "^3.3.4",
     "dot-prop": "^4.2.0",
     "getobject": "^0.1.0",
     "glob": "^7.1.2",
@@ -72,6 +78,11 @@
     },
     "lint": {
       "reflinks": true
+    }
+  },
+  "standard-version": {
+    "scripts": {
+      "prerelease": "npm run build"
     }
   }
 }
