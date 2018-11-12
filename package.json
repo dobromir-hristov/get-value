@@ -1,12 +1,12 @@
 {
-  "name": "get-value",
+  "name": "@d_hristov/get-value",
   "description": "Use property paths like 'a.b.c' to get a nested value from an object. Even works when keys have dots in them (no other dot-prop library can do this!).",
   "version": "3.0.2",
-  "homepage": "https://github.com/jonschlinkert/get-value",
+  "homepage": "https://github.com/dobromir-hristov/get-value",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
-  "repository": "jonschlinkert/get-value",
+  "repository": "dobromir-hristov/get-value",
   "bugs": {
-    "url": "https://github.com/jonschlinkert/get-value/issues"
+    "url": "https://github.com/dobromir-hristov/get-value/issues"
   },
   "license": "MIT",
   "files": [
